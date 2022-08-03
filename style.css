@@ -1,0 +1,104 @@
+
+*
+{
+	box-sizing: border-box;
+	text-decoration:none;
+	font:16px arial;
+	user-select: none;
+	overflow: visible;
+	color:#0f1501;
+	outline:none;
+	border: none;
+	padding:0;
+	margin:0;
+}
+main
+{
+	display: grid;
+	grid-template-rows: 10vh auto 10vh;
+}
+
+body
+{
+	background:#fff;
+}
+
+header,footer
+{
+	height: 10vh;
+	background:#4a6a08;
+	display: flex;
+	justify-content:space-around;
+	align-items: center;
+}
+nav a
+{
+	font:120% calibri;
+	color:#0f1501;
+	padding: 5px 15px;
+	border:2px outset transparent;
+}	
+nav a:hover
+{
+	color:#fff;
+	border:2px outset #eee;
+}
+h2
+{
+	font:bold 18px arial;
+	color:#fff;
+}
+.icon
+{
+	width: 30px;
+	height: 30px;
+} 
+
+footer a
+{
+	color:#0f1501;
+}	
+footer a:hover
+{
+	color:#eee;
+	text-decoration: underline;
+}
+
+h1
+{
+	font:bold 20px arial;
+	padding: 20px;
+}
+p
+{
+	font: italic 14px arial ;
+	padding: 20px;
+}
+button
+{
+	font-size:16px;
+	background:#4a6a08;
+	width: 150px;
+	margin:20px;
+	padding: 10px;
+	color: white;
+	/* transition: background 1s; */
+}	
+button:hover
+{
+	box-shadow: 1px 1px 10px 0px #4a6a08;
+	background: #fff;
+	color:#0f1501;
+}
+
+@media screen and (max-width: 800px)
+{
+	header,footer
+	{
+		flex-flow:column wrap;
+	}
+	header
+	{
+		height:15vh;
+	}
+}

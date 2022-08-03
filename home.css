@@ -1,0 +1,76 @@
+@import url("style.css");
+@import url("response1.css");
+
+/*#4a6a08 #424f29 #0f1501 */
+
+#home
+{
+	display:grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+	grid-template-rows: auto 1fr;
+}
+
+aside
+{
+	grid-column: 1/2;
+	grid-row:1/3;
+	background:#424f29;
+	display: grid;
+}
+#links
+{
+	display: grid;
+}
+#links a
+{
+	color:#fff;
+	padding: 10px;
+	margin:20px;
+}	
+#links a:hover
+{
+	color: #0f1501;
+}
+img[name="sideimage"]
+{
+	align-self:flex-end ;
+	width:100%;
+	height:100%;
+	object-fit:cover;
+}
+#detail
+{
+	grid-column: 2/5;
+	grid-row:1/2;
+	border:3px solid #eee;
+	margin:10px;
+	width: auto;
+	height: auto;
+}
+.box
+{
+	text-align: center;
+	margin:5px;
+	height: 500px;
+	background: #eee;
+	box-shadow: 1px 1px 10px 0px #000;
+}
+.box:first-child
+{
+	grid-column: 2/3;
+}
+.box:last-child
+{
+	grid-column:4/5;
+}
+h4
+{
+	font-style:bold;
+	padding:10px;
+}
+.boximage
+{
+	width:90%;
+	height: 45%;
+	object-fit: cover;
+}
